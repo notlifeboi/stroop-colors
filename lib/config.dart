@@ -28,12 +28,12 @@ class ConfigState extends State<Config> {
     // Inicializamos nuestro provider para traer los datos de este
     final counterProvider = context.read<CounterProvider>();
     // Los controladores tendrán un texto por defecto que serán las variables de los providers
-    _intentosController = TextEditingController(
-        text: counterProvider.intentos.toString());
-    _tiempoController = TextEditingController(
-        text: counterProvider.tiempo.toString());
-    _pausaController = TextEditingController(
-        text: counterProvider.pausa.toString());
+    _intentosController =
+        TextEditingController(text: counterProvider.intentos.toString());
+    _tiempoController =
+        TextEditingController(text: counterProvider.tiempo.toString());
+    _pausaController =
+        TextEditingController(text: counterProvider.pausa.toString());
     // Se hace esto para mantener los datos cada vez que quiera iniciar un nuevo juego personalizado
     // Si se modifican los datos de entrada antes del juego, también se modificarán
   }
@@ -62,9 +62,9 @@ class ConfigState extends State<Config> {
                   vPausa = int.tryParse(_pausaController.text) ?? 0;
                   // Desplegamos las funciones para actualizar los nuevos valores de pausa y tiempo
                   Provider.of<CounterProvider>(context, listen: false)
-                    .actualizarTiempo(vTiempo);
+                      .actualizarTiempo(vTiempo);
                   Provider.of<CounterProvider>(context, listen: false)
-                    .actualizarPausa(vPausa);
+                      .actualizarPausa(vPausa);
                   // Mandamos a la vista de modo de juego 3, en este caso contrarreloj
                   Navigator.push(
                     context,
@@ -82,7 +82,7 @@ class ConfigState extends State<Config> {
           ],
         ),
         // En el body asigno controladores a los TextField para que puedan modificar su juego libre
-        body: Padding(
+        body: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Center(
             child: Column(
@@ -172,14 +172,14 @@ class ConfigState extends State<Config> {
                               // Redirigo a la misma vista que el juego default
                               // Me dí cuenta que lo que estaba haciendo en un principio cuando desarrollé el juego general servía para este
                               builder: (context) => Juego(
-                              // Uso de vIntentos para juego personalizado
-                              intentos: vIntentos,
-                              tiempo: vTiempo,
-                              pausa: vPausa,
-                              modo: modo,
-                            )
-                          )
-                        );
+                                    // Uso de vIntentos para juego personalizado
+                                    intentos: vIntentos,
+                                    tiempo: vTiempo,
+                                    pausa: vPausa,
+                                    modo: modo,
+                                  )
+                                )
+                              );
                     },
                     child: const Text('Empezar')),
               ],
