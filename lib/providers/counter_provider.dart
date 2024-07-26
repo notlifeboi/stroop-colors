@@ -24,7 +24,7 @@ class CounterProvider with ChangeNotifier {
       'puntuacion': puntuacion,
       'modo': modo,
     });
-  // Por último, organizamos las puntuaciones de mayor a mayor
+  // Por último, organizamos las puntuaciones de mayor a menor
   // a serán las puntuaciones mayores, y se irán comparando constantemente con b
   _top.sort((a, b) => b['puntuacion'].compareTo(a['puntuacion']));
     notifyListeners();

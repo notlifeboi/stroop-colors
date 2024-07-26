@@ -27,7 +27,7 @@ class Leaderboard extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text('Se mostrarán los mejores 5 puntajes obtenidos'),
+            const Text('Se mostrarán los mejores 5 puntajes obtenidos'),
             // Analizamos el array que se está creando por medio de nuestro provider (Guardar datos de juego)
             // Si está vacio significa que todavia no se han guardado puntajes
             if(context.watch<CounterProvider>().top.isEmpty)
