@@ -196,7 +196,7 @@ class JuegoState extends State<Contrarreloj> {
                   ),
                   const Text(
                     // Mismo texto que el personalizado, invitamos al usuario a jugar por defecto
-                    'Si quieres guardar tus puntajes, juega el modo por defecto'),
+                    'Si quieres guardar tus puntajes, juega el modo por defecto', textAlign: TextAlign.center),
                   const SizedBox(height: 20),
                   // De igual manera mostramos sus estadísticas
                   Text('Palabras totales: $cantidadpalabras'),

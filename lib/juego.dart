@@ -377,7 +377,8 @@ class JuegoState extends State<Juego> {
                 // Si el modo no es vanilla mostrará una vista donde se le indicará que sus datos no serán guardados
                 else
                   Center(
-                      child: Column(children: [
+                    child: Column(
+                    children: [
                     const Text(
                       '¡Gracias por participar!',
                       style: TextStyle(
@@ -389,7 +390,7 @@ class JuegoState extends State<Juego> {
                     ),
                     const Text(
                         // Invitamos a jugar al modo por defecto
-                        'Si quieres guardar tus puntajes, juega el modo por defecto'),
+                        'Si quieres guardar tus puntajes, juega el modo por defecto', textAlign: TextAlign.center),
                     // De igual manera mostraremos sus estadísticas
                     const SizedBox(height: 20),
                     Text('Palabras totales: $cantidadpalabras'),
