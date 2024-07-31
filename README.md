@@ -12,14 +12,14 @@ Se utiliza este efecto como base del juego, ya que por medio de esta aplicación
 <ul>
   <li>Entorno de desarrollo (Visual Studio Code o Android Studio preferiblemente)</li>
   <li>Framework Flutter (Instalado)</li>
-  <li>Consola github o CMD</li>
+  <li>Consola Git Bash o CMD</li>
 </ul>
 
 <h2>Ejecución de la aplicación</h2>
 <p>
   <ol>
     <li><b>Clona tu repositorio</b></li>
-    <p>Abre tu consola de Github o CMD, a continuación ubicate en la ruta de la carpeta donde vas a clonar el repositorio</p>. Ahora escribe el siguiente comando
+    <p>Abre tu consola de Github o CMD, a continuación ubicate en la ruta de la carpeta donde vas a clonar el repositorio. Ahora escribe el siguiente comando: </p>
     <pre><code>git clone</code></pre>
   </ol>
 </p>
