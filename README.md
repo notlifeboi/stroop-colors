@@ -18,9 +18,13 @@ Se utiliza este efecto como base del juego, ya que por medio de esta aplicación
 <h2>Ejecución de la aplicación</h2>
 <p>
   <ol>
-    <li><b>Clona tu repositorio</b></li>
+  <b><li>Clona el repositorio</li></b>
     <p>Abre tu consola de Github o CMD, a continuación ubicate en la ruta de la carpeta donde vas a clonar el repositorio. Ahora escribe el siguiente comando: </p>
-    <pre><code>git clone</code></pre>
+    <pre><code>git clone https://github.com/notlifeboi/stroop-colors.git</code></pre>
+  <b><li>Abre el repositorio clonado</li></b>
+    <p>Una vez tengas tu repositorio clonado, abrelo desde tu entorno de desarrollo, ya sea Visual Studio Code o Android Studio. Tener en cuenta que ambos entornos tienen sus     independencias que deben ser instaladas para que pueda correr la aplicación</p>
+  <b><li>Corre el proyecto</li></b>
+    <p>Corre el proyecto dando click al botón de debug correspondiente a tu entorno de desarrollo, en caso de que utilices Android Studio deberás descargar una máquina            virtual o bien, correr el proyecto en tu propio celular. Para Visual, tendrás la opción de correrlo desde tu navegador Chrome o Edge</p>
   </ol>
 </p>
 
